@@ -6,7 +6,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQu
 import os
 BOT_TOKEN = os.getenv("BOT_TOKEN", "8781534240:AAHmbhPE2cKWTOSKuzMQNp19ZIfzk5dGKjc")
 ADMIN_ID = int(os.getenv("ADMIN_ID", "5585749093"))
-SITE_URL = "https://t.me/naholmah_studio_bot"
+SITE_URL = "https://rental-app-eight-mu.vercel.app"
 
 logging.basicConfig(level=logging.INFO)
 

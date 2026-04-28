@@ -3,8 +3,9 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ReplyKe
 from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQueryHandler, filters, ContextTypes
 
 # Настройки
-BOT_TOKEN = "8781534240:AAHmbhPE2cKWTOSKuzMQNp19ZIfzk5dGKjc"
-ADMIN_ID = 5585749093
+import os
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8781534240:AAHmbhPE2cKWTOSKuzMQNp19ZIfzk5dGKjc")
+ADMIN_ID = int(os.getenv("ADMIN_ID", "5585749093"))
 SITE_URL = "https://t.me/naholmah_studio_bot"
 
 logging.basicConfig(level=logging.INFO)
